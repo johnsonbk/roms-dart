@@ -17,8 +17,8 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'Insert Title Here'
-copyright = '2021, UCAR'
+project = 'Using ROMS with DART'
+copyright = '2022, UCAR'
 author = 'Ben Johnson'
 
 # The full version, including alpha/beta/rc tags
