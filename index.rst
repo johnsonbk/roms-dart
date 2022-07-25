@@ -29,7 +29,7 @@ sequence, or ``obs_seq``, file format.
 The steps needed to complete an assimilation cycle are:
 
 1. :doc:`compile-dart-executables`.
-2. :doc:`generate-initial-ensemble` using tha ``perturb_single_instance``
+2. :doc:`generate-initial-ensemble` using the ``perturb_single_instance``
    executable.
 3. :doc:`create-obs-seq-file` using a suitable observation converter.
 4. :doc:`compile-and-stage-experiment` using the build scripts in the ROMS
