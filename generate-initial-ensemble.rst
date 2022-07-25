@@ -43,7 +43,7 @@ restart files in wc12 with that name.
    ln -s wc12/roms_posterior_0001_37700.nc roms_input.nc
 
 Next, add a namelist in the ``input.nml`` file named
-``perturb_single_instance_nml`` to instruct the exeucable how many perturbed 
+``perturb_single_instance_nml`` to instruct the executable how many perturbed 
 copies it should create. Open ``input.nml`` with a text editor and add a 
 namlist similar to:
 
