@@ -42,7 +42,15 @@ The steps needed to complete an assimilation cycle are:
    :caption: Contents
 
    /compile-dart-executables
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Goals for Jose's visit
+
+   /general-plan-for-adding-testing
+   /osse-pmo
    /generate-initial-ensemble
    /create-obs-seq-file
    /compile-and-stage-experiment
-
+   
