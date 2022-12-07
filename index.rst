@@ -42,6 +42,7 @@ The steps needed to complete an assimilation cycle are:
    :caption: Contents
 
    /compile-dart-executables
+   /compile-coawst-cheyenne
 
 .. toctree::
    :maxdepth: 2
