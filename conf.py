@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'Using ROMS with DART'
-copyright = '2022, UCAR'
+copyright = '2024, University Corporation for Atmospheric Research'
 author = 'Ben Johnson'
 
 # The full version, including alpha/beta/rc tags

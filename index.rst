@@ -47,6 +47,13 @@ The steps needed to complete an assimilation cycle are:
 .. toctree::
    :maxdepth: 2
    :hidden:
+   :caption: ROMS Quad Interpolate
+
+   /overview
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
    :caption: Goals for Jose's visit
 
    /general-plan-for-adding-testing
