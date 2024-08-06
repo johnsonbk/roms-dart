@@ -39,23 +39,29 @@ The steps needed to complete an assimilation cycle are:
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: DART
+   :caption: Contents
 
    /compile-dart-executables
+   /compile-coawst-cheyenne
 
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: ROMS
 
-   /overview
    /standard-roms-installation
-   /compile-coawst-cheyenne
 
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Demonstration of functionality
+   :caption: ROMS Quad Interpolate
+
+   /overview
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Goals for Jose's visit
 
    /general-plan-for-adding-testing
    /osse-pmo
