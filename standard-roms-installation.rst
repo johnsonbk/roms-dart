@@ -21,6 +21,17 @@ ROMS uses git lfs to manage files necessary to run the test cases in
 
    su $ADMIN
    sudo port install git-lfs
+   exit
+   vim ~/.gitconfig
+   # Append this to the end of .gitconfig
+   [filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+   :wq
+
+
 
 Download ROMS and set environmental variables
 =============================================
