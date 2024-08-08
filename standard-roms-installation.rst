@@ -6,6 +6,25 @@ Complete the instructions for downloading ROMS from the `README in the MyROMS
 repository <https://github.com/myroms/roms>`_ and then follow the `Getting
 started guide at myroms.org <https://www.myroms.org/wiki/Getting_Started>`_.
 
+Install Git Large File Storage
+==============================
+
+`Git Large File Storage (LFS) <https://git-lfs.com/>`_ "replaces large files
+such as audio samples, videos, datasets, and graphics with text pointers inside
+Git, while storing the file contents on a remote server like GitHub.com or
+GitHub Enterprise."
+
+ROMS uses git lfs to manage files necessary to run the test cases in
+`roms_test <https://github.com/myroms/roms_test>`_.
+
+.. code-block::
+
+   su $ADMIN
+   sudo port install git-lfs
+
+Download ROMS and set environmental variables
+=============================================
+
 .. code-block::
 
    git clone https://github.com/myroms/roms.git
@@ -19,6 +38,8 @@ started guide at myroms.org <https://www.myroms.org/wiki/Getting_Started>`_.
    :wq
 
    source ~/.bashrc
+
+
 
 Upwelling application
 =====================
@@ -151,9 +172,15 @@ The ``roms_wc13.in`` file must be modified further:
    ININAME == ../../../roms_test/WC13/Data/wc13_ini.nc
    :wq
 
-At runtime, if this error is thrown:
+At runtime, if an error similar to this is thrown:
 
 .. error::
 
    ERROR: Abnormal termination: NetCDF OUTPUT.
    REASON: NetCDF: Unknown file format
+
+Remember to `Install Git Large File Storage`_.
+
+Double Gyre
+===========
+
