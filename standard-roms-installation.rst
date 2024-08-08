@@ -192,6 +192,28 @@ At runtime, if an error similar to this is thrown:
 
 Remember to `Install Git Large File Storage`_.
 
-Double Gyre
-===========
+At runtime, if an error similar to this is thrown:
 
+.. error::
+
+   GET_GRID_NF90 - unable to find grid variable: visc_factor
+   in grid NetCDF file: wc13_grd.nc
+
+The ``roms_wc13.in`` file can be modified:
+
+.. code-block::
+
+   LuvSponge == F ! horizontal momentum
+
+At runtime, if an error similar to this is thrown:
+
+.. error::
+
+   GET_GRID_NF90 - unable to find grid variable: diff_factor
+   in grid NetCDF file: wc13_grd.nc
+
+The ``roms_wc13.in`` file can be modified:
+
+.. code-block::
+
+   LtracerSponge == F F
