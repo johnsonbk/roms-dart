@@ -217,3 +217,14 @@ The ``roms_wc13.in`` file can be modified:
 .. code-block::
 
    LtracerSponge == F F
+
+Updated location
+----------------
+
+Since most of the input files are in the ``roms_test/WC13/Data/`` directory,
+move the ``romsM`` executable and the ``roms_wc13.in`` file there and run from
+that directory:
+
+.. code-block::
+
+   mpirun -np 4 ./romsM ./roms_wc13.in
