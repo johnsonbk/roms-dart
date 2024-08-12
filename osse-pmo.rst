@@ -14,6 +14,11 @@ precursor programs to format a file that can be fed to ``perfect_model_obs``:
 2. ``create_fixed_network_sequence`` repeats that template at multiple times
 3. ``perfect_model_obs`` harvests the observation values.
 
+.. note::
+
+   The model_mod requires the ``s_rho`` field in order to run perfect_model_obs.
+   It is not present in the ``wc13_grd.nc`` file, however, it is present in the
+   restart from a given ROMS run.
 
 |perfect-model-obs|
 

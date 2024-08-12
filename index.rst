@@ -61,11 +61,12 @@ The steps needed to complete an assimilation cycle are:
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Goals for Jose's visit
+   :caption: Demo of ROMS functionality
 
    /general-plan-for-adding-testing
    /osse-pmo
    /generate-initial-ensemble
    /create-obs-seq-file
+   /world-ocean-database
    /compile-and-stage-experiment
    
