@@ -252,6 +252,13 @@ that directory:
 
    mpirun -np 4 ./romsM ./roms_wc13.in
 
+As noted above, the default configuration of the WC13 application is to
+initialize from 0Z January 3rd, 2004 and produce restart files at 0Z January
+7th, 2004.
+
+Suitable WOD09 obs_seq files are stored on campaign storage at: 
+``/glade/p/cisl/dares/Observations/WOD09/200401/obs_seq.0Z.20040107``
+
 References
 ==========
 
