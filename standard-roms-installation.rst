@@ -135,6 +135,29 @@ Successful completion of the integration should produce a set of NetCDF files:
 WC13 application
 ================
 
+Overview
+--------
+
+WC13 refers to the West Coast 2013 application described by Moore et 
+al., (2011) [1]_ used to study the California Current System. The `wc_ini.nc
+file stored in the roms_test repository
+<https://github.com/myroms/roms_test/blob/main/WC13/Data/wc13_ini.nc>`_
+has a start date of January 3rd, 2004 (ocean time has units of seconds since
+1968-05-23 00:00:00 and the value of 1123891200).
+
+The standard configuration onf ``roms_wc13.in`` has the number of timesteps
+between writing restart records, ``NRST``, set to ``192``. The length of each
+timestep, ``DT``, is set to ``1800.0d0`` seconds (30 minutes) thus, with 2
+timesteps per hour, the output frequency for restart files is every 4 days.
+
+The initial set of restart files will be produced on January 7th, 2004 after
+running the model.
+
+The ``NRREC`` setting indicates whether to restart from the initial file or 
+whether to as described in the `MyROMS documentation
+<https://www.myroms.org/wiki/Variables#nrrec>`_. If ``NRREC`` is set to -1, 
+the model will restart from the most recent restart file.
+
 Modify the ``build_roms.sh`` script to change the application to ``WC13`` and 
 then compile.
 
@@ -228,3 +251,13 @@ that directory:
 .. code-block::
 
    mpirun -np 4 ./romsM ./roms_wc13.in
+
+References
+==========
+
+.. [1] Moore, Andrew M., Hernan G. Arango, Gregoire Broquet, Brian S. Powell,
+       Anthony T. Weaver, Javier Zavala-Garay, 2011: The Regional Ocean
+       Modeling System (ROMS) 4-dimensional variational data assimilation
+       systems: Part I – System overview and formulation, *Progress in
+       Oceanography*, **91**, 34-49, `doi 10.1016/j.pocean.2011.05.004
+       <https://doi.org/10.1016/j.pocean.2011.05.004>`_.
